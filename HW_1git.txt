@@ -1,0 +1,303 @@
+GIT Homework 1
+
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+	Create a new repository/ Repository name*/ TXT
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+	git clone "https://github.com/MariShuQA/TXT.git"
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+	touch new.txt
+
+ 4. Добавить файл под гит.
+	git add new.txt
+
+ 5. Закоммитить файл.
+	git commit -m "first commit"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+	git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+	cat >> new.txt
+	FIO: "Shubina Marina Aleksandrovna
+        age: 37
+        count pets: 1
+        desired salary: 5000 $
+^C
+
+ 8. Отправить изменения на внешний репозиторий.
+	git commit -a -m "second commit"
+        git push
+
+ 9. Создать файл preferences.txt
+	touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+cat >> preferences.txt
+        favorite movie: Basic Instinct
+        favorite show: The big bang theoty
+        favorite food: Fish and vegetables
+        favorite time of year: Summer
+        country to visit: Australia
+
+ctrl + C
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+cat > skills.txt
+
+	1. Базовая теория: Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.
+	2. HTTP. Методы запросов на сервер, коды ответов https сервера
+	3. JSON, XML, Структура
+	4. Тестирование API через Postman. JS, автотесты API
+	5. Charles и Fiddler. Снифинг http web трафика
+	6. Dev Tools веб браузеров Google Chrome, FireFox
+
+ctrl + C
+
+ 12. Сделать коммит в одну строку.
+	git add . && git commit -m "my commit"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+	Add file/ create new file/ name file - bug_report.txt
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+edit this file
+
+|ID| |481|
+|Severity| |Major|
+|Environment| |Windows10, Opera (99.0.4788.75)|
+|Title| |[Opera] The country does not change when  selected a country in dropdown  [Countries and languges]|
+|Steps| |1. Navigate to capital.com|
+      	|2. click dropdown [Countries and languages]|
+      	|3. click dropdown [Countries]|
+      	|4. Select any countries|
+      	|Note. "Reproduced only for Opera browser|
+|Expected Result| |1. Country changed for selected|
+|Actual Result| |1. Country doesn't changes|
+|Attachment| |"https://drive.google.com/file/d/16TYzUh6VqhcXLr_o7IFbhsUFJ-rpAoDp/view?usp=drivesdk"|
+|License| |ALL|
+|Role| |ALL|
+|Author| |Marina Sh|
+
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	commit changes
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+	git pull
+
+
+
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+	Create a new repository/ Repository name*/ JSON
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+	 git clone "https://github.com/MariShuQA/JSON.git"
+
+ 6. Внутри локального JSON создать файл “new.json”.
+ 	 touch new.json
+
+ 7. Добавить файл под гит. 
+	git add new.json
+
+ 8. Закоммитить файл.
+	 git commit -m "one"
+
+ 9. Отправить файл на внешний GitHub репозиторий. 
+	 git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+cat >> new.json
+{
+        "FIO": "Shubina Marina Aleksandrovna",
+        "age": 37,
+        "count pets": 1,
+        "desired salary": "5000 $"
+}
+Ctrl+C
+
+
+ 11. Отправить изменения на внешний репозиторий.
+	git commit -a -m "two"
+        git push
+
+ 12. Создать файл preferences.json
+	touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. 
+	
+	cat >> preferences.json
+{
+        "favorite movie": "Basic Instinct",
+        "favorite show": "The big bang theoty",
+        "favorite food": "Fish and vegetables",
+        "favorite time of year": "Summer",
+        "country to visit": "Australia"
+}
+ctrl + C
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+	cat > skills.json
+{
+	"Базовая теория": "Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.",
+	"HTTP": "Методы запросов на сервер, коды ответов https сервера",
+	"JSON, XML": "Структура",
+	"Тестирование API через Postman": "JS, автотесты API",
+	"Charles и Fiddler": "Снифинг http web трафика",
+	"Dev Tools веб браузеров": "Google Chrome, FireFox"
+}
+ctrl + C
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	git add . && git commit -m "one" && git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+	Add file/ create new file/ name file - bug_report.json
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+edit this file
+{
+	"ID": 481,	
+	"Severity": "Major",
+	"Environment": "Windows10, Opera (99.0.4788.75)",
+	"Title": "[Opera] The country does not change when  selected a country in dropdown  [Countries and languges]",
+	"Steps": {
+		"1": "Navigate to capital.com"
+		"2": "click dropdown [Countries and languages]"
+		"3": "click dropdown [Countries]"
+		"4": "Select any countries"
+		"Note": "Reproduced only for Opera browser"
+	}
+	"Expected Result": "1. Country changed for selected"
+	"Actual Result": "1. Country doesn't changes"
+	"Attachment": "https://drive.google.com/file/d/16TYzUh6VqhcXLr_o7IFbhsUFJ-rpAoDp/view?usp=drivesdk"
+	"License": "ALL"
+	"Role": "ALL"
+	"Author": "Marina Sh"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes
+	
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+	git pull
+
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+	Create a new repository/ Repository name*/ XML
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+	git clone "https://github.com/MariShuQA/XML.git"
+
+ 23. Внутри локального XML создать файл “new.xml”.
+	touch new.xml
+
+ 24. Добавить файл под гит.
+	git add new.xml
+
+ 25. Закоммитить файл.
+	git commit -m "first commit"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+	git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+cat >>new.xml
+
+	<?xml version="1.0"?>
+			  <Information_about_yourself>
+				  <FirstName>Marina</FirstName>
+				  <LastName>Shubina</LastName>
+				  <Age>37</Age>
+				  <pets>1</pets>
+				  <salary>5000</salary>
+			  </Information_about_yourself>
+^C
+
+ 28. Отправить изменения на внешний репозиторий.
+	git commit -a -m "second commit"
+	git push
+
+ 29. Создать файл preferences.xml
+	touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	cat >> preferences.xml
+<?xml version="1.0"?>
+	<preferences>
+		<favorite_movie>Basic Instinct</favorite_movie>
+		<favorite_show>The big bang theoty</favorite_show>
+		<favorite_food>Fish and vegetables</favorite_food>
+		<favorite_time_of_year>Summer</favorite_time_of_year>
+		<country>Australia</country>
+	</preferences>
+^C
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+	touch skills.xml
+	cat >> skills.xml
+<?xml version="1.0"?>
+<skills>
+	<Base_theory>Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.</Base_theory>
+	<HTTP>"Методы запросов на сервер, коды ответов https сервера"</HTTP>
+	<JSON_XML>Структура</JSON_XML>
+	<Postman>"Тестирование API через Postman, JS, автотесты API"</Postman>
+	<Charles_Fiddler>"Снифинг http web трафика"</Charles_Fiddler>
+	<Dev_Tools>"Google Chrome, FireFox"</Dev_Tools>
+</skills>
+ 32. Сделать коммит в одну строку.
+	 git add .&& git commit -m "one-line commit"
+	
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+	Add file/ create new file/ name file - bug_report.xml
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version="1.0"?>
+<bug_report>
+	<ID>481</ID>
+	<Severity>Major</Severity>
+	<Environment>Windows10, Opera (99.0.4788.75)</Environment>
+	<Title>[Opera] The country does not change when selected a country in dropdown[Countries and languges]</Title>
+	<Steps>
+		<1>1Navigate to capital.com</1>
+		<2>click dropdown [Countries and languages]</2>
+		<3>click dropdown [Countries]</3>
+		<4>Select any countries</4>
+		<Note>Reproduced only for Opera browser</Note>
+	</Steps>
+	<Expected_Result>1. Country changed for selected</Expected_Result>
+	<Actual_Result>1. Country doesn't changes</Actual_Result>
+	<Attachment>"https://drive.google.com/file/d/16TYzUh6VqhcXLr_o7IFbhsUFJ-rpAoDp/view?usp=drivesdk"</Attachment>
+	<License>ALL</License>
+	<Role>ALL</Role>
+	<Author>Marina Sh</Author>
+</bug_report>   
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+	git pull
+
+
+
